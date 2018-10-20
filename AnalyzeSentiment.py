@@ -2,6 +2,7 @@ import nltk
 nltk.download('subjectivity')
 nltk.download('vader_lexicon')
 from nltk.classify import NaiveBayesClassifier
+from nltk.tokenize import sent_tokenize
 from nltk.corpus import subjectivity
 from nltk.sentiment import SentimentAnalyzer
 from nltk.sentiment.util import *
@@ -37,7 +38,9 @@ def analyze_sentiment(paragraph):
 	total_sum = 0
 	count = 0.0
 
-	for sentence in paragraph:
+	sentences = sent_tokenize(paragraph)
+
+	for sentence in sentences:
 		total_sum += sid.polarity_scores(sentence)["compound"]
 		count+=1
 
