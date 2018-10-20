@@ -1,7 +1,7 @@
 # SoundWord
-###Text Analyzers:
-    - Classify to Liberal or Conservative
-    - Classify Sentiment
+Text Analyzers:\
+    - Classify to Liberal or Conservative\
+    - Classify Sentiment\
     - Get Word Frequencies
 
 
