@@ -1,0 +1,13 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Microblog</title>
+        {% else %}
+        <title>SoundWord</title>
+        {% endif %}
+    </head>
+    <body>
+      <h1> SoundWord </h1>
+       {% block content %}{% endblock %}
+    </body>
+</html>
