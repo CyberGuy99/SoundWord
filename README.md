@@ -1,4 +1,8 @@
 # SoundWord
+See Venv.txt and Requirements.txt for getting dependencies
+
+Create a key.txt file in your repo that has one string for the Rev API key
+
 Text Analyzers:\
     - Classify to Liberal or Conservative\
     - Classify Sentiment\
