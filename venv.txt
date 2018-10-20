@@ -1,0 +1,21 @@
+Instructions for Windows:
+    https://docs.python.org/3/library/venv.html
+    https://stackoverflow.com/questions/4527958/python-virtualenv-questions
+
+    Creates env:
+    python -m venv c:\path\to\myenv
+
+    Activates env:
+    c:\path\to\myenv\activate
+
+    Loads pip dependencies from text (using repo's current requirements.txt; only need to do for the first time):
+        pip install -r requirements.txt
+
+    Stores current dependencies into text (do only after doing a new pip install):
+        pip freeze > requirements.txt
+
+    Updates Requirements to Github Repo:
+        git add requirements.txt (then commit and push)
+
+    Deactivates env:
+    deactivate
