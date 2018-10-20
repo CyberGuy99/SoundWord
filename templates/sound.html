@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Choose Options and Upload MP3</h2>
-    <form action="" method="post" novalidate>
+    <h3>Choose Options and Upload MP3</h3>
+    <form action="/uploadMP3" method="post" enctype="multipart/form-data" novalidate>
         {{ form.hidden_tag() }}
         <p>
             {{ form.filename.label }}<br>
@@ -11,6 +11,7 @@
         <p>{{ form.pol() }} {{ form.pol.label }}</p>
         <p>{{ form.sent() }} {{ form.sent.label }}</p>
         <p>{{ form.freq() }} {{ form.freq.label }}</p>
+        <p>{{ form.audio() }} {{ form.audio.label }}</p>
         <p>{{ form.submit() }}</p>
     </form>
 {% endblock %}
