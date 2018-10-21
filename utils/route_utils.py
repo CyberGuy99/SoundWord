@@ -1,7 +1,6 @@
 import revAPI
-from counts import word_frequencies
-from sentiment import analyze_sentiment
-
+from SoundForm.analyzers.counts import word_frequencies
+from SoundForm.analyzers.sentiment import analyze_sentiment
 
 #mock method change later
 def get_pol(text):

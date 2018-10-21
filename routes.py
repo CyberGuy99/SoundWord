@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, flash
 from config import Config
-from mp3_form import MP3Form
-#import route_utils #uncomment this after revAPI complete
+from forms.mp3_form import MP3Form
+#from utils import route_utils #uncomment this after revAPI complete
 
 app = Flask(__name__)
 app.config.from_object(Config)
