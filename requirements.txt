@@ -8,7 +8,7 @@ idna==2.7
 ItsDangerous==1.0.0
 Jinja2==2.10
 MarkupSafe==1.0
-nltk==3.3
+nltk==3.4.5
 pkg-resources==0.0.0
 requests==2.20.0
 rev-ai==0.0.3
